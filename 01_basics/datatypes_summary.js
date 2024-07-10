@@ -44,3 +44,35 @@ const myFunction = function () {
 }                                     
 
 console.log(typeof scoreValue); // check the type of variable
+
+
+
+
+
+
+// ========================================================================= //
+
+// Stack (Primitive),
+
+let myYoutubeName = "pallab"
+
+let anotherYoutubeName = myYoutubeName
+anotherYoutubeName = "piya"
+
+console.log(myYoutubeName);
+console.log(anotherYoutubeName);
+
+// Heap (Non-Primitive)
+
+let userOne = {
+    name: "pallab",
+    age: 18,
+    email: "pallab@gmail"
+}
+
+let userTwo = userOne
+
+userTwo.email = "piya@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
