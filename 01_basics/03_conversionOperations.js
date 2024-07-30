@@ -1,63 +1,80 @@
-let score = undefined
+// Declaring a variable with an undefined value
+let score = undefined;
 
-console.log(typeof score);
-console.log(typeof (score));
+// Checking the type of the score variable
+console.log(typeof score); // Output: "undefined"
+console.log(typeof (score)); // Output: "undefined"
 
-let valueInNumber = Number(score)
-console.log(typeof valueInNumber);
-console.log(valueInNumber);
+// Converting the undefined score to a number
+let valueInNumber = Number(score);
+console.log(typeof valueInNumber); // Output: "number"
+console.log(valueInNumber); // Output: NaN (Not-a-Number)
 
+// Conversion examples
 // "33" => 33
 // "32abc" => NaN
-// true => 1; false => 0
+// true => 1
+// false => 0
 
-let isLoggedIn = 1
+// Declaring a variable with a boolean value
+let isLoggedIn = 1;
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn);
+// Converting the boolean value to a boolean type
+let booleanIsLoggedIn = Boolean(isLoggedIn);
+console.log(booleanIsLoggedIn); // Output: true
 
-// 1 => true; 0 => false
+// Boolean conversion examples
+// 1 => true
+// 0 => false
 // "" => false
 // "pallab" => true
 
-let someNumber = 44
+// Declaring a variable with a number value
+let someNumber = 44;
 
-let stringNumber = String(someNumber)
-console.log(typeof stringNumber);
+// Converting the number to a string
+let stringNumber = String(someNumber);
+console.log(typeof stringNumber); // Output: "string"
 
 // *************************************** Operations *************************************** //
 
-let value = 3
-let negValue = -value
-console.log(negValue);
+// Declaring a variable with a positive value
+let value = 3;
 
-console.log(2+2);
-console.log(2-2);
-console.log(2*2);
-console.log(2**3);
-console.log(2/3);
-console.log(2%3);
+// Negating the value
+let negValue = -value;
+console.log(negValue); // Output: -3
 
+// Basic arithmetic operations
+console.log(2 + 2); // Output: 4
+console.log(2 - 2); // Output: 0
+console.log(2 * 2); // Output: 4
+console.log(2 ** 3); // Output: 8 (exponentiation)
+console.log(2 / 3); // Output: 0.6666666666666666
+console.log(2 % 3); // Output: 2 (remainder)
 
-let str1 = "hello"
-let str2 = " pallab"
+// String concatenation
+let str1 = "hello";
+let str2 = " pallab";
 
-let str3 = str1 + str2
-console.log(str3);
+let str3 = str1 + str2;
+console.log(str3); // Output: "hello pallab"
 
-console.log("1" + 2);
-console.log(1 + "2");
-console.log("1" + 2 + 2);
-console.log(1 + 2 + "2");
+// String and number concatenation
+console.log("1" + 2); // Output: "12" (string concatenation)
+console.log(1 + "2"); // Output: "12" (string concatenation)
+console.log("1" + 2 + 2); // Output: "122" (string concatenation)
+console.log(1 + 2 + "2"); // Output: "32" (number addition followed by string concatenation)
 
+// Unary plus operator
+console.log(+true); // Output: 1 (true is converted to 1)
+console.log(+""); // Output: 0 (empty string is converted to 0)
 
-console.log(+true);
-console.log(+"");
+// Declaring multiple variables and assigning them the same value
+let num1, num2, num3;
+num1 = num2 = num3 = 2 + 2;
 
-let num1, num2, num3
-
-num1 = num2 = num3 = 2 + 2
-
-let gameScore = 5
-++gameScore
-console.log(gameScore); // 6
+// Increment operator
+let gameScore = 5;
+++gameScore;
+console.log(gameScore); // Output: 6

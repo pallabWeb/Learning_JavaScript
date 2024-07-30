@@ -1,22 +1,24 @@
-"use strict"; //treat all JS code as newer version
+"use strict"; // Treat all JavaScript code as the latest version
 
-// alert("Hello Pallab")   // this is not work, we are using node.js, not browser
+// alert("Hello Pallab")   // This line would display an alert in the browser, but it doesn't work in Node.js
 
-let name = "pallab"
-let age = 18
-let isLoggedIn = false
+// Declaring variables with let
+let name = "pallab";
+let age = 18;
+let isLoggedIn = false;
 
+// Different data types in JavaScript
 
-// number => 2 to power 53
-//bigint
-//string => ""
-//boolean => true/false
-//null => standalone value
-//unddfined => 
-//symbol => unique
+// Number => up to 2^53 - 1
+// BigInt => for larger integers
+// String => text, enclosed in quotes ""
+// Boolean => true or false
+// Null => a standalone value representing "nothing"
+// Undefined => a variable that has been declared but not assigned a value
+// Symbol => a unique and immutable primitive value, often used as object property keys
 
+// Object => a complex data type used to store collections of data and more complex entities
 
-//object
-
-console.log(typeof null); //object
-console.log(typeof undefined); //undefined
+// Checking the types of null and undefined
+console.log(typeof null); // Output: "object" (this is a well-known JavaScript quirk)
+console.log(typeof undefined); // Output: "undefined"
