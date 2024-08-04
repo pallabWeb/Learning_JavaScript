@@ -68,3 +68,30 @@ console.log(Object.entries(tinderUser)); // Output: [ [ 'id', '21' ], [ 'name', 
 
 // Checking if the tinderUser object has a specific property
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // Output: true
+
+// Little talk about object destructuring
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "pallab"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// {
+//     "name": "pallab",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
