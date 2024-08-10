@@ -4,14 +4,9 @@ Welcome to the Learning JavaScript repository! This project is designed to help 
 
 ## Structure
 
-The project is divided into two main directories:
+The project is divided into multiple directories, each covering specific topics:
 
-1. `01_basics`
-2. `02_basics`
-
-Each directory contains JavaScript files that cover specific topics.
-
-### 01_basics
+### `01_basics`
 
 This directory includes introductory topics such as variables, data types, and basic operations.
 
@@ -24,13 +19,21 @@ This directory includes introductory topics such as variables, data types, and b
 - **07_Dates.js**: Handling dates in JavaScript.
 - **datatypes_summary.js**: Summary and review of data types.
 
-### 02_basics
+### `02_basics`
 
 This directory continues with more complex structures like arrays and objects.
 
 - **01_Array.js**: Introduction to arrays and their methods.
 - **02_Array.js**: More advanced array methods and operations.
 - **03_objects.js**: Introduction to objects and their properties.
+- **04_objects.js**: Continued exploration of objects in JavaScript.
+
+### `03_basics`
+
+This directory includes foundational concepts like functions and scope.
+
+- **01_functions.js**: Introduction to functions in JavaScript.
+- **02_scopes.js**: Understanding scope in JavaScript.
 
 ## Getting Started
 
