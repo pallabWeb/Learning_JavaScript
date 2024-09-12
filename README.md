@@ -38,4 +38,4 @@ The project is divided into the following main sections:
 ## 💻 How to Use
 - Clone the repository: 
   ```bash
-  git clone https://github.com/your-username/your-repository.git
+  git clone https://github.com/pallabWeb/Learning_JavaScript.git
