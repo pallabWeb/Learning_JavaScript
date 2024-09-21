@@ -1,0 +1,5 @@
+tempLiList.forEach(function (l) {
+    l.style.color = 'red'
+    l.style.backgroundColor = "white"
+})
+undefined

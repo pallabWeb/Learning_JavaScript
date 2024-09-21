@@ -1,0 +1,38 @@
+const allH2 = document.querySelectorAll('h2')
+undefined
+JavaScript:1  [Deprecation] The 'textprediction' attribute will be removed in the future. Use the 'writingsuggestions' attribute instead. See https://learn.microsoft.com/en-us/microsoft-edge/web-platform/site-impacting-changes for more information.
+allH2[0].innerText
+''
+allH2[1].innerText
+'Page version status'
+const myH2 = document.querySelectorAll('.mw-headline')
+undefined
+myH2[0].innerText
+VM451:1 Uncaught TypeError: Cannot read properties of undefined (reading 'innerText')
+    at <anonymous>:1:9
+(anonymous) @ VM451:1
+const myH2 = document.querySelectorAll('.mw-page-title-main')
+undefined
+myH2[0].innerText
+'JavaScript'
+myH2
+NodeList [span.mw-page-title-main]
+myH2.forEach(function (h) {
+    h.style.color = 'red'
+})
+undefined
+myH2.forEach(function (h) {
+    h.style.color = 'red'
+})
+undefined
+myH2.forEach(function (h) {
+    h.style.color = 'red'
+    h.style.padding = '20px'
+})
+undefined
+myH2.forEach(function (h) {
+    h.style.color = 'red'
+    h.style.padding = '20px'
+    h.innerText = "Pallab Mondal"
+})
+undefined

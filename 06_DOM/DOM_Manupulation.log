@@ -1,0 +1,14 @@
+title.innerText
+'DOM Learning'
+title.textContent
+'DOM Learning Hello'
+title.innerHTML
+'DOM Learning <span style="display: none;">Hello</span>'
+document.getElementsByClassName('heading')
+HTMLCollection [h1#title.heading, title: h1#title.heading]
+document.querySelector('h1')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​
