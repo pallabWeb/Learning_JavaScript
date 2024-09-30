@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning DOM</title>
+    <style>
+        .bg-black {
+            background-color: black;
+            color: white;
+        }
+        li {
+            color: orange;
+            font-size: 30px;
+            font-weight: bold;
+            list-style: none;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        li:hover {
+            background-color: white;
+            color: rgb(0, 0, 0);
+            transform: scale(1.1);
+            border: 1px solid black;
+        }
+        ul {
+            padding: 10px;
+            margin: 40px;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <ul id="languages">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+       const li = document.createElement('li');
+       li.innerText = langName;
+       const ul = document.querySelector('#languages');
+       ul.appendChild(li);
+    }
+
+    addLanguage('Python');
+    addLanguage('TypeScript');
+
+    function addOptionalLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('#languages').appendChild(li);
+    }
+
+    addOptionalLanguage('C++');
+
+    // Edit
+
+    const secondLang = document.querySelector('li:nth-child(4)');
+    // secondLang.innerHTML = "Java";
+    const newli = document.createElement('li');
+    newli.textContent = "Mojo";
+    secondLang.replaceWith(newli);
+
+    // edit 
+
+    const firstLang = document.querySelector('li:nth-child(1)');
+    firstLang.outerHTML = '<li>Java</li>';
+
+    // remove
+
+    const lastLang = document.querySelector('li:nth-child(4)');
+    lastLang.remove();
+</script>
+</html>
