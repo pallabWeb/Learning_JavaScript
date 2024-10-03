@@ -6,7 +6,7 @@
 
 ## Solution Code
 
-### Project 1
+### Project 1 (Color Changar)
 
 ```javascript
 const buttons = document.querySelectorAll('.button');
@@ -27,6 +27,44 @@ buttons.forEach(function (button) {
       body.style.backgroundColor = e.target.id;
     }
   });
+});
+```
+
+### Project 2 (BMI Calculator)
+
+```javascript
+const form = document.querySelector('form');
+// This usecase will give you empty
+// const weight = parseInt(document.querySelector('#weight').value)
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('#results');
+
+  if (height === '' || height < 0 || isNaN(height)) {
+    results.innerHTML = 'Please give a Valid Height';
+  }
+  if (weight === '' || weight < 0 || isNaN(weight)) {
+    results.innerHTML = 'Please give a Valid Weight';
+  }
+
+  const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+  let message = '';
+
+  if (bmi < 18.5) {
+    message = 'Underweight';
+  } else if (bmi >= 18.5 && bmi < 25) {
+    message = 'Normal weight';
+  } else if (bmi >= 25 && bmi < 30) {
+    message = 'Overweight';
+  } else {
+    message = 'Obese';
+  }
+
+  results.innerHTML = `Your BMI is ${bmi} (${message})`;
 });
 ```
 
